@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>D4 Language Tool</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        @font-face {
+            font-family: 'RuneFont1';
+            src: url('itemfonts/diablo.ttf') format('truetype');
+        }
+
+        /* Style for the tooltip container */
+        .tooltipLegendary {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            color: #f8920c;
+        }
+
+        .tooltipUnique {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            color: #e1b68b;
+        }
+
+        /* Style for the tooltip content */
+        .tooltipLegendary .tooltip-content {
+            position: absolute;
+            z-index: 1;
+            width: 200px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+
+        /* Show the tooltip content on hover */
+        .tooltipLegendary:hover .tooltip-content {
+            display: block;
+        }
+
+        .tooltipUnique .tooltip-content {
+            position: absolute;
+            z-index: 1;
+            width: 200px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+
+        /* Show the tooltip content on hover */
+        .tooltipUnique:hover .tooltip-content {
+            display: block;
+        }
+
+
+        /* Style for the top tooltip */
+        .legTop {
+            background-image: url("item/leg_bg_top.png");
+            min-width: 403px;
+            min-height: 150px;
+        }
+
+        .legTopDataLeft {
+            float: left;
+            margin-top: 70px;
+            margin-left: 50px;
+            font-size: 18px;
+            color: #f8920c;
+            font-family: 'RuneFont1', sans-serif;
+            text-shadow: 2px 2px 2px #000000;
+        }
+
+        .legTopDataRight {
+            float:right;
+            margin-right: 85px;
+        }
+
+        .legTopDataIconRight{
+            width: 50px;
+            height: 50px;
+        }
+
+
+        /* Style for the middle tooltip */
+        .legMid {
+            background-image: url("item/leg_bg_mid.png");
+            color: red;
+            min-width: 403px;
+            min-height: 130px;
+        }
+
+        .legMidData {
+            color: red;
+            position: absolute;
+            left: 20%;
+        }
+
+        /* Style for the bottom tooltip */
+        .legBot {
+            background-image: url("item/leg_bg_bot.png");
+            color: red;
+            min-width: 403px;
+            min-height: 143px;
+        }
+
+        .legBotData {
+            color: red;
+            position: absolute;
+            left: 20%;
+        }
+
+        /* Style for the top tooltip */
+        .uniTop {
+            background-image: url("item/uni_bg_top.png");
+            min-width: 403px;
+            min-height: 150px;
+        }
+
+        .uniTopDataLeft {
+            float: left;
+            margin-top: 70px;
+            margin-left: 50px;
+            font-size: 18px;
+            color: #e1b68b;
+            font-family: 'RuneFont1', sans-serif;
+            text-shadow: 2px 2px 2px #000000;
+        }
+
+        .uniTopDataRight {
+            float:right;
+            margin-right: 85px;
+        }
+
+        .uniTopDataIconRight{
+            width: 50px;
+            height: 50px;
+        }
+        
+        /* Style for the middle tooltip */
+        .uniMid {
+            background-image: url("item/uni_bg_mid.png");
+            color: red;
+            min-width: 403px;
+            min-height: 130px;
+        }
+
+        .uniMidData {
+            color: red;
+            position: absolute;
+            left: 20%;
+        }
+
+        /* Style for the bottom tooltip */
+        .uniBot {
+            background-image: url("item/uni_bg_bot.png");
+            color: red;
+            min-width: 403px;
+            min-height: 143px;
+        }
+
+        .uniBotData {
+            color: red;
+            position: absolute;
+            left: 20%;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <!-- Unique HTML Tooltip -->
+    <div class="tooltipUnique">
+        <span>Deathless Visage</span>
+        <div class="tooltip-content">
+            <div class="uniTop">
+                <div class="uniTopDataLeft">
+                    Deathless Visage
+                </div>
+                <div class="uniTopDataRight">
+                    <div class="uniTopDataIconRight">
+                        <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                    </div>
+                </div>
+            </div>
+            <div class="uniMid">
+                <div class="uniMidData">
+                    
+                </div>
+            </div>
+            
+            <div class="uniBot">
+                <div class="uniBotData">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+<br>
+<br>
+    <!-- Legendary HTML Tooltip -->
+    <div class="tooltipLegendary">
+        <span>Deathless Visage</span>
+        <div class="tooltip-content">
+            <div class="legTop">
+                <div class="legTopDataLeft">
+                    Deathless Visage
+                </div>
+                <div class="legTopDataRight">
+                    <div class="legTopDataIconRight">
+                        <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                    </div>
+                </div>
+            </div>
+            <div class="legMid">
+                <div class="legMidData">
+                    
+                </div>
+            </div>
+            
+            <div class="legBot">
+                <div class="legBotData">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
