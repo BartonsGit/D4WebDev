@@ -21,13 +21,6 @@
             color: #f8920c;
         }
 
-        .tooltipUnique {
-            position: relative;
-            display: inline-block;
-            cursor: pointer;
-            color: #e1b68b;
-        }
-
         /* Style for the tooltip content */
         .tooltipLegendary .tooltip-content {
             position: absolute;
@@ -40,6 +33,13 @@
         /* Show the tooltip content on hover */
         .tooltipLegendary:hover .tooltip-content {
             display: block;
+        }
+
+        .tooltipUnique {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            color: #e1b68b;
         }
 
         .tooltipUnique .tooltip-content {
@@ -55,7 +55,6 @@
             display: block;
         }
 
-
         /* Style for the top tooltip */
         .legTop {
             background-image: url("item/leg_bg_top.png");
@@ -63,7 +62,7 @@
             min-height: 150px;
         }
 
-        .legTopDataLeft {
+        .tooltip-content .legTopDataLeft {
             float: left;
             margin-top: 70px;
             margin-left: 50px;
@@ -73,53 +72,53 @@
             text-shadow: 2px 2px 2px #000000;
         }
 
-        .legTopDataRight {
-            float:right;
+        .tooltip-content .legTopDataRight {
+            float: right;
             margin-right: 85px;
         }
 
-        .legTopDataIconRight{
+        .tooltip-content .legTopDataIconRight {
             width: 50px;
             height: 50px;
         }
 
 
         /* Style for the middle tooltip */
-        .legMid {
+        .tooltip-content .legMid {
             background-image: url("item/leg_bg_mid.png");
             color: red;
             min-width: 403px;
             min-height: 130px;
         }
 
-        .legMidData {
+        .tooltip-content .legMidData {
             color: red;
             position: absolute;
             left: 20%;
         }
 
         /* Style for the bottom tooltip */
-        .legBot {
+        .tooltip-content .legBot {
             background-image: url("item/leg_bg_bot.png");
             color: red;
             min-width: 403px;
             min-height: 143px;
         }
 
-        .legBotData {
+        .tooltip-content .legBotData {
             color: red;
             position: absolute;
             left: 20%;
         }
 
         /* Style for the top tooltip */
-        .uniTop {
+        .tooltip-content .uniTop {
             background-image: url("item/uni_bg_top.png");
             min-width: 403px;
             min-height: 150px;
         }
 
-        .uniTopDataLeft {
+        .tooltip-content .uniTopDataLeft {
             float: left;
             margin-top: 70px;
             margin-left: 50px;
@@ -129,42 +128,406 @@
             text-shadow: 2px 2px 2px #000000;
         }
 
-        .uniTopDataRight {
-            float:right;
+        .tooltip-content .uniTopDataRight {
+            float: right;
             margin-right: 85px;
         }
 
-        .uniTopDataIconRight{
+        .tooltip-content .uniTopDataIconRight {
             width: 50px;
             height: 50px;
         }
-        
+
         /* Style for the middle tooltip */
-        .uniMid {
+        .tooltip-content .uniMid {
             background-image: url("item/uni_bg_mid.png");
             color: red;
             min-width: 403px;
             min-height: 130px;
         }
 
-        .uniMidData {
+        .tooltip-content .uniMidData {
             color: red;
             position: absolute;
             left: 20%;
         }
 
         /* Style for the bottom tooltip */
-        .uniBot {
+        .tooltip-content .uniBot {
             background-image: url("item/uni_bg_bot.png");
             color: red;
             min-width: 403px;
             min-height: 143px;
         }
 
-        .uniBotData {
+        .tooltip-content .uniBotData {
             color: red;
             position: absolute;
             left: 20%;
+        }
+
+        .paperdollNecro {
+            padding-left: 65px;
+            display: flex;
+            align-items: flex-start;
+            height: 850px;
+            background-image: url("profile/NecroDollBG.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .paperdollBarb {
+            padding-left: 65px;
+            display: flex;
+            align-items: flex-start;
+            height: 850px;
+            background-image: url("profile/BarbDollBG.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .paperdollDruid {
+            padding-left: 65px;
+            display: flex;
+            align-items: flex-start;
+            height: 850px;
+            background-image: url("profile/DruidDollBG.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .paperdollRogue {
+            padding-left: 65px;
+            display: flex;
+            align-items: flex-start;
+            height: 850px;
+            background-image: url("profile/RogueDollBG.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .paperdollSorc {
+            padding-left: 65px;
+            display: flex;
+            align-items: flex-start;
+            height: 850px;
+            background-image: url("profile/SorcDollBG.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .left-slots {
+            padding-top: 50px;
+            width: 100px;
+            height: 850px;
+        }
+
+        .middle-section {
+            padding-top: 50px;
+            width: 335px;
+            height: 850px;
+            height: max-content;
+        }
+
+        .right-slots {
+            padding-top: 50px;
+            width: 100px;
+            height: 850px;
+        }
+
+
+
+
+
+        .slotHelm {
+            margin-bottom: 10px;
+            width: 75px;
+            height: 115px;
+            background-image: url("profile/Helm.png");
+            background-size: contain;
+        }
+
+        .slotHelm .tooltip-content {
+            position: absolute;
+            z-index: 1;
+            width: 200px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+
+        .slotHelm:hover .tooltip-content {
+            display: block;
+        }
+
+        .tooltip-content .uniTop .uniTopDataIconRight img {
+            height: max-content;
+            width: max-content;
+        }
+
+        .tooltip-content .legTop .legTopDataIconRight img {
+            height: max-content;
+            width: max-content;
+        }
+
+        .slotChest {
+            margin-bottom: 10px;
+            width: 75px;
+            height: 115px;
+            background-image: url("profile/Chest.png");
+            background-size: contain;
+        }
+
+        .slotChest .tooltip-content {
+            position: absolute;
+            z-index: 1;
+            width: 200px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+
+        .slotChest:hover .tooltip-content {
+            display: block;
+        }
+
+        .slotChest .tooltip-content img {
+            height: max-content;
+            width: max-content;
+        }
+
+        .slotGloves {
+            margin-bottom: 10px;
+            width: 75px;
+            height: 115px;
+            background-image: url("profile/Gloves.png");
+            background-size: contain;
+        }
+
+        .slotGloves .tooltip-content {
+            position: absolute;
+            z-index: 1;
+            width: 200px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+
+        .slotGloves:hover .tooltip-content {
+            display: block;
+        }
+
+        .slotGloves .tooltip-content .uniTop .uniTopDataIconRight img {
+            height: max-content;
+            width: max-content;
+        }
+
+        .slotPants {
+            margin-bottom: 10px;
+            width: 75px;
+            height: 115px;
+            background-image: url("profile/Pants.png");
+            background-size: contain;
+        }
+
+        .slotPants .tooltip-content {
+            position: absolute;
+            z-index: 1;
+            width: 200px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+
+        .slotPants:hover .tooltip-content {
+            display: block;
+        }
+
+        .slotPants .tooltip-content .uniTop .uniTopDataIconRight img {
+            height: max-content;
+            width: max-content;
+        }
+
+        .slotBoots {
+            margin-bottom: 10px;
+            width: 75px;
+            height: 115px;
+            background-image: url("profile/Boots.png");
+            background-size: contain;
+        }
+
+        .slotBoots .tooltip-content {
+            position: absolute;
+            z-index: 1;
+            width: 200px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+
+        .slotBoots:hover .tooltip-content {
+            display: block;
+        }
+
+        .slotBoots .tooltip-content .uniTop .uniTopDataIconRight img {
+            height: max-content;
+            width: max-content;
+        }
+
+        .slotWeapon1 {
+            margin-bottom: 10px;
+            width: 75px;
+            height: 115px;
+            background-image: url("profile/Weapon1.png");
+            background-size: contain;
+        }
+
+        .slotWeapon1 .tooltip-content {
+            position: absolute;
+            z-index: 1;
+            width: 200px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+
+        .slotWeapon1:hover .tooltip-content {
+            display: block;
+        }
+
+        .slotWeapon1 .tooltip-content .uniTop .uniTopDataIconRight img {
+            height: max-content;
+            width: max-content;
+        }
+
+
+        .slotNone {
+            margin-bottom: 10px;
+            width: 75px;
+            height: 115px;
+        }
+
+        .slotAmulet {
+            margin-bottom: 10px;
+            width: 75px;
+            height: 115px;
+            background-image: url("profile/Amulet.png");
+            background-size: contain;
+        }
+
+        .slotAmulet .tooltip-content {
+            position: absolute;
+            z-index: 1;
+            width: 200px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+
+        .slotAmulet:hover .tooltip-content {
+            display: block;
+        }
+
+        .slotAmulet .tooltip-content .uniTop .uniTopDataIconRight img {
+            height: max-content;
+            width: max-content;
+        }
+
+        .slotRing1 {
+            margin-bottom: 10px;
+            width: 75px;
+            height: 115px;
+            background-image: url("profile/Ring1.png");
+            background-size: contain;
+        }
+
+        .slotRing1 .tooltip-content {
+            position: absolute;
+            z-index: 1;
+            width: 200px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+
+        .slotRing1:hover .tooltip-content {
+            display: block;
+        }
+
+        .slotRing1 .tooltip-content .uniTop .uniTopDataIconRight img {
+            height: max-content;
+            width: max-content;
+        }
+
+        .slotRing2 {
+            margin-bottom: 10px;
+            width: 75px;
+            height: 115px;
+            background-image: url("profile/Ring2.png");
+            background-size: contain;
+        }
+
+        .slotRing2 .tooltip-content {
+            position: absolute;
+            z-index: 1;
+            width: 200px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+
+        .slotRing2:hover .tooltip-content {
+            display: block;
+        }
+
+        .slotRing2 .tooltip-content .uniTop .uniTopDataIconRight img {
+            height: max-content;
+            width: max-content;
+        }
+
+        .slotWeapon2 {
+            margin-bottom: 10px;
+            width: 75px;
+            height: 115px;
+            background-image: url("profile/Weapon2.png");
+            background-size: contain;
+        }
+
+        .slotWeapon2 .tooltip-content {
+            position: absolute;
+            z-index: 1;
+            width: 200px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+
+        .slotWeapon2:hover .tooltip-content {
+            display: block;
+        }
+
+        .slotWeapon2 .tooltip-content .uniTop .uniTopDataIconRight img {
+            height: max-content;
+            width: max-content;
+        }
+
+
+        .slotContainerUnique {
+            background-image: url("profile/UniqueDollBG.png");
+            background-size: contain;
+            width: 75px;
+            height: 115px;
+        }
+
+        .slotContainerUnique img {
+            margin-top: 20px;
+            margin-left: 10px;
+            width: 75%;
+            height: 75%;
+        }
+
+        .slotContainerLegendary {
+            background-image: url("profile/LegendaryDollBG.png");
+            background-size: contain;
+            width: 75px;
+            height: 115px;
+        }
+
+        .slotContainerLegendary img {
+            margin-top: 20px;
+            margin-left: 10px;
+            width: 75%;
+            height: 75%;
         }
     </style>
 
@@ -188,19 +551,17 @@
             </div>
             <div class="uniMid">
                 <div class="uniMidData">
-                    
+
                 </div>
             </div>
-            
             <div class="uniBot">
                 <div class="uniBotData">
-                    
                 </div>
             </div>
         </div>
     </div>
-<br>
-<br>
+    <br>
+    <br>
     <!-- Legendary HTML Tooltip -->
     <div class="tooltipLegendary">
         <span>Deathless Visage</span>
@@ -217,17 +578,809 @@
             </div>
             <div class="legMid">
                 <div class="legMidData">
-                    
+
                 </div>
             </div>
-            
+
             <div class="legBot">
                 <div class="legBotData">
-                    
+
                 </div>
             </div>
         </div>
     </div>
+
+
+
+
+    <!-- Paperdoll Structures -->
+    <div class="paperdollNecro">
+        <div class="left-slots">
+            <div class="slotHelm">
+                <div class="slotContainerUnique">
+                    <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                    <div class="tooltip-content">
+                        <div class="uniTop">
+                            <div class="uniTopDataLeft">
+                                Deathless Visage
+                            </div>
+                            <div class="uniTopDataRight">
+                                <div class="uniTopDataIconRight">
+                                    <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uniMid">
+                            <div class="uniMidData">
+
+                            </div>
+                        </div>
+
+                        <div class="uniBot">
+                            <div class="uniBotData">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slotChest">
+                <div class="slotContainerLegendary">
+                    <div class="tooltipLegendary">
+                        <img src="item/icons/Chest/NecroRunic.png" alt="Runic Chestplate">
+                        <div class="tooltip-content">
+                            <div class="legTop">
+                                <div class="legTopDataLeft">
+                                    Runic Chestplate
+                                </div>
+                                <div class="legTopDataRight">
+                                    <div class="legTopDataIconRight">
+                                        <img src="item/icons/Chest/NecroRunic.png" alt="Runic Chestplate">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="legMid">
+                                <div class="legMidData">
+
+                                </div>
+                            </div>
+
+                            <div class="legBot">
+                                <div class="legBotData">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slotGloves"></div>
+            <div class="slotPants"></div>
+            <div class="slotBoots"></div>
+            <div class="slotWeapon1"></div>
+        </div>
+        <div class=middle-section>
+
+        </div>
+        <div class="right-slots">
+            <div class="slotNone"></div>
+            <div class="slotAmulet"></div>
+            <div class="slotRing1">
+                <div class="slotContainerLegendary">
+                    <div class="tooltipLegendary">
+                        <img src="item/icons/Chest/NecroRunic.png" alt="Runic Chestplate">
+                        <div class="tooltip-content">
+                            <div class="legTop">
+                                <div class="legTopDataLeft">
+                                    Runic Chestplate
+                                </div>
+                                <div class="legTopDataRight">
+                                    <div class="legTopDataIconRight">
+                                        <img src="item/icons/Chest/NecroRunic.png" alt="Runic Chestplate">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="legMid">
+                                <div class="legMidData">
+
+                                </div>
+                            </div>
+
+                            <div class="legBot">
+                                <div class="legBotData">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slotRing2"></div>
+            <div class="slotNone"></div>
+            <div class="slotWeapon2"><div class="slotContainerLegendary">
+                <div class="tooltipLegendary">
+                    <img src="item/icons/Chest/NecroRunic.png" alt="Runic Chestplate">
+                    <div class="tooltip-content">
+                        <div class="legTop">
+                            <div class="legTopDataLeft">
+                                Runic Chestplate
+                            </div>
+                            <div class="legTopDataRight">
+                                <div class="legTopDataIconRight">
+                                    <img src="item/icons/Chest/NecroRunic.png" alt="Runic Chestplate">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="legMid">
+                            <div class="legMidData">
+
+                            </div>
+                        </div>
+
+                        <div class="legBot">
+                            <div class="legBotData">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+        </div>
+    </div>
+
+    <div class="paperdollBarb">
+        <div class="left-slots">
+            <div class="slotHelm">
+                <div class="slotContainerUnique">
+                    <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                    <div class="tooltip-content">
+                        <div class="uniTop">
+                            <div class="uniTopDataLeft">
+                                Deathless Visage
+                            </div>
+                            <div class="uniTopDataRight">
+                                <div class="uniTopDataIconRight">
+                                    <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uniMid">
+                            <div class="uniMidData">
+
+                            </div>
+                        </div>
+
+                        <div class="uniBot">
+                            <div class="uniBotData">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slotChest">
+                <div class="slotContainerLegendary">
+                    <div class="tooltipLegendary">
+                        <img src="item/icons/Chest/NecroRunic.png" alt="Runic Chestplate">
+                        <div class="tooltip-content">
+                            <div class="legTop">
+                                <div class="legTopDataLeft">
+                                    Runic Chestplate
+                                </div>
+                                <div class="legTopDataRight">
+                                    <div class="legTopDataIconRight">
+                                        <img src="item/icons/Chest/NecroRunic.png" alt="Runic Chestplate">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="legMid">
+                                <div class="legMidData">
+
+                                </div>
+                            </div>
+
+                            <div class="legBot">
+                                <div class="legBotData">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="slotGloves"></div>
+            <div class="slotPants"></div>
+            <div class="slotBoots"><div class="slotContainerUnique">
+                <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                <div class="tooltip-content">
+                    <div class="uniTop">
+                        <div class="uniTopDataLeft">
+                            Deathless Visage
+                        </div>
+                        <div class="uniTopDataRight">
+                            <div class="uniTopDataIconRight">
+                                <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uniMid">
+                        <div class="uniMidData">
+
+                        </div>
+                    </div>
+
+                    <div class="uniBot">
+                        <div class="uniBotData">
+
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+            <div class="slotWeapon1"></div>
+        </div>
+        <div class=middle-section>
+
+        </div>
+        <div class="right-slots">
+            <div class="slotNone"></div>
+            <div class="slotAmulet"></div>
+            <div class="slotRing1"></div>
+            <div class="slotRing2"><div class="slotContainerUnique">
+                <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                <div class="tooltip-content">
+                    <div class="uniTop">
+                        <div class="uniTopDataLeft">
+                            Deathless Visage
+                        </div>
+                        <div class="uniTopDataRight">
+                            <div class="uniTopDataIconRight">
+                                <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uniMid">
+                        <div class="uniMidData">
+
+                        </div>
+                    </div>
+
+                    <div class="uniBot">
+                        <div class="uniBotData">
+
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+            <div class="slotNone"></div>
+            <div class="slotWeapon2"></div>
+        </div>
+    </div>
+
+    <div class="paperdollRogue">
+        <div class="left-slots">
+            <div class="slotHelm">
+                <div class="slotContainerUnique">
+                    <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                    <div class="tooltip-content">
+                        <div class="uniTop">
+                            <div class="uniTopDataLeft">
+                                Deathless Visage
+                            </div>
+                            <div class="uniTopDataRight">
+                                <div class="uniTopDataIconRight">
+                                    <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uniMid">
+                            <div class="uniMidData">
+
+                            </div>
+                        </div>
+
+                        <div class="uniBot">
+                            <div class="uniBotData">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slotChest">
+                <div class="slotContainerLegendary">
+                    <div class="tooltipLegendary">
+                        <img src="item/icons/Chest/NecroRunic.png" alt="Runic Chestplate">
+                        <div class="tooltip-content">
+                            <div class="legTop">
+                                <div class="legTopDataLeft">
+                                    Runic Chestplate
+                                </div>
+                                <div class="legTopDataRight">
+                                    <div class="legTopDataIconRight">
+                                        <img src="item/icons/Chest/NecroRunic.png" alt="Runic Chestplate">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="legMid">
+                                <div class="legMidData">
+
+                                </div>
+                            </div>
+
+                            <div class="legBot">
+                                <div class="legBotData">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="slotGloves"></div>
+            <div class="slotPants"><div class="slotContainerLegendary">
+                <div class="tooltipLegendary">
+                    <img src="item/icons/Chest/NecroRunic.png" alt="Runic Chestplate">
+                    <div class="tooltip-content">
+                        <div class="legTop">
+                            <div class="legTopDataLeft">
+                                Runic Chestplate
+                            </div>
+                            <div class="legTopDataRight">
+                                <div class="legTopDataIconRight">
+                                    <img src="item/icons/Chest/NecroRunic.png" alt="Runic Chestplate">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="legMid">
+                            <div class="legMidData">
+
+                            </div>
+                        </div>
+
+                        <div class="legBot">
+                            <div class="legBotData">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+            <div class="slotBoots"></div>
+            <div class="slotWeapon1"><div class="slotContainerUnique">
+                <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                <div class="tooltip-content">
+                    <div class="uniTop">
+                        <div class="uniTopDataLeft">
+                            Deathless Visage
+                        </div>
+                        <div class="uniTopDataRight">
+                            <div class="uniTopDataIconRight">
+                                <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uniMid">
+                        <div class="uniMidData">
+
+                        </div>
+                    </div>
+
+                    <div class="uniBot">
+                        <div class="uniBotData">
+
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+        </div>
+        <div class=middle-section>
+
+        </div>
+        <div class="right-slots">
+            <div class="slotNone"></div>
+            <div class="slotAmulet"><div class="slotContainerUnique">
+                <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                <div class="tooltip-content">
+                    <div class="uniTop">
+                        <div class="uniTopDataLeft">
+                            Deathless Visage
+                        </div>
+                        <div class="uniTopDataRight">
+                            <div class="uniTopDataIconRight">
+                                <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uniMid">
+                        <div class="uniMidData">
+
+                        </div>
+                    </div>
+
+                    <div class="uniBot">
+                        <div class="uniBotData">
+
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+            <div class="slotRing1"><div class="slotContainerLegendary">
+                <div class="tooltipLegendary">
+                    <img src="item/icons/Chest/NecroRunic.png" alt="Runic Chestplate">
+                    <div class="tooltip-content">
+                        <div class="legTop">
+                            <div class="legTopDataLeft">
+                                Runic Chestplate
+                            </div>
+                            <div class="legTopDataRight">
+                                <div class="legTopDataIconRight">
+                                    <img src="item/icons/Chest/NecroRunic.png" alt="Runic Chestplate">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="legMid">
+                            <div class="legMidData">
+
+                            </div>
+                        </div>
+
+                        <div class="legBot">
+                            <div class="legBotData">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+            <div class="slotRing2"></div>
+            <div class="slotNone"></div>
+            <div class="slotWeapon2"></div>
+        </div>
+    </div>
+
+    <div class="paperdollSorc">
+        <div class="left-slots">
+            <div class="slotHelm">
+                <div class="slotContainerUnique">
+                    <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                    <div class="tooltip-content">
+                        <div class="uniTop">
+                            <div class="uniTopDataLeft">
+                                Deathless Visage
+                            </div>
+                            <div class="uniTopDataRight">
+                                <div class="uniTopDataIconRight">
+                                    <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uniMid">
+                            <div class="uniMidData">
+
+                            </div>
+                        </div>
+
+                        <div class="uniBot">
+                            <div class="uniBotData">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slotChest">
+                <div class="slotContainerLegendary">
+                    <div class="tooltipLegendary">
+                        <img src="item/icons/Chest/NecroRunic.png" alt="Runic Chestplate">
+                        <div class="tooltip-content">
+                            <div class="legTop">
+                                <div class="legTopDataLeft">
+                                    Runic Chestplate
+                                </div>
+                                <div class="legTopDataRight">
+                                    <div class="legTopDataIconRight">
+                                        <img src="item/icons/Chest/NecroRunic.png" alt="Runic Chestplate">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="legMid">
+                                <div class="legMidData">
+
+                                </div>
+                            </div>
+
+                            <div class="legBot">
+                                <div class="legBotData">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="slotGloves"></div>
+            <div class="slotPants"><div class="slotContainerLegendary">
+                <div class="tooltipLegendary">
+                    <img src="item/icons/Chest/NecroRunic.png" alt="Runic Chestplate">
+                    <div class="tooltip-content">
+                        <div class="legTop">
+                            <div class="legTopDataLeft">
+                                Runic Chestplate
+                            </div>
+                            <div class="legTopDataRight">
+                                <div class="legTopDataIconRight">
+                                    <img src="item/icons/Chest/NecroRunic.png" alt="Runic Chestplate">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="legMid">
+                            <div class="legMidData">
+
+                            </div>
+                        </div>
+
+                        <div class="legBot">
+                            <div class="legBotData">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+            <div class="slotBoots"></div>
+            <div class="slotWeapon1"><div class="slotContainerUnique">
+                <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                <div class="tooltip-content">
+                    <div class="uniTop">
+                        <div class="uniTopDataLeft">
+                            Deathless Visage
+                        </div>
+                        <div class="uniTopDataRight">
+                            <div class="uniTopDataIconRight">
+                                <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uniMid">
+                        <div class="uniMidData">
+
+                        </div>
+                    </div>
+
+                    <div class="uniBot">
+                        <div class="uniBotData">
+
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+        </div>
+        <div class=middle-section>
+
+        </div>
+        <div class="right-slots">
+            <div class="slotNone"></div>
+            <div class="slotAmulet"><div class="slotContainerUnique">
+                <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                <div class="tooltip-content">
+                    <div class="uniTop">
+                        <div class="uniTopDataLeft">
+                            Deathless Visage
+                        </div>
+                        <div class="uniTopDataRight">
+                            <div class="uniTopDataIconRight">
+                                <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uniMid">
+                        <div class="uniMidData">
+
+                        </div>
+                    </div>
+
+                    <div class="uniBot">
+                        <div class="uniBotData">
+
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+            <div class="slotRing1"></div>
+            <div class="slotRing2"><div class="slotContainerUnique">
+                <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                <div class="tooltip-content">
+                    <div class="uniTop">
+                        <div class="uniTopDataLeft">
+                            Deathless Visage
+                        </div>
+                        <div class="uniTopDataRight">
+                            <div class="uniTopDataIconRight">
+                                <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uniMid">
+                        <div class="uniMidData">
+
+                        </div>
+                    </div>
+
+                    <div class="uniBot">
+                        <div class="uniBotData">
+
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+            <div class="slotNone"></div>
+            <div class="slotWeapon2"></div>
+        </div>
+    </div>
+
+    <div class="paperdollDruid">
+        <div class="left-slots">
+            <div class="slotHelm">
+                <div class="slotContainerUnique">
+                    <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                    <div class="tooltip-content">
+                        <div class="uniTop">
+                            <div class="uniTopDataLeft">
+                                Deathless Visage
+                            </div>
+                            <div class="uniTopDataRight">
+                                <div class="uniTopDataIconRight">
+                                    <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uniMid">
+                            <div class="uniMidData">
+
+                            </div>
+                        </div>
+
+                        <div class="uniBot">
+                            <div class="uniBotData">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slotChest">
+                <div class="slotContainerLegendary">
+                    <div class="tooltipLegendary">
+                        <img src="item/icons/Chest/NecroRunic.png" alt="Runic Chestplate">
+                        <div class="tooltip-content">
+                            <div class="legTop">
+                                <div class="legTopDataLeft">
+                                    Runic Chestplate
+                                </div>
+                                <div class="legTopDataRight">
+                                    <div class="legTopDataIconRight">
+                                        <img src="item/icons/Chest/NecroRunic.png" alt="Runic Chestplate">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="legMid">
+                                <div class="legMidData">
+
+                                </div>
+                            </div>
+
+                            <div class="legBot">
+                                <div class="legBotData">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="slotGloves"><div class="slotContainerUnique">
+                <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                <div class="tooltip-content">
+                    <div class="uniTop">
+                        <div class="uniTopDataLeft">
+                            Deathless Visage
+                        </div>
+                        <div class="uniTopDataRight">
+                            <div class="uniTopDataIconRight">
+                                <img src="item/icons/DeathlessVisage.png" alt="Deathless Visage">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uniMid">
+                        <div class="uniMidData">
+
+                        </div>
+                    </div>
+
+                    <div class="uniBot">
+                        <div class="uniBotData">
+
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+            <div class="slotPants"></div>
+            <div class="slotBoots"><div class="slotContainerLegendary">
+                <div class="tooltipLegendary">
+                    <img src="item/icons/Chest/NecroRunic.png" alt="Runic Chestplate">
+                    <div class="tooltip-content">
+                        <div class="legTop">
+                            <div class="legTopDataLeft">
+                                Runic Chestplate
+                            </div>
+                            <div class="legTopDataRight">
+                                <div class="legTopDataIconRight">
+                                    <img src="item/icons/Chest/NecroRunic.png" alt="Runic Chestplate">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="legMid">
+                            <div class="legMidData">
+
+                            </div>
+                        </div>
+
+                        <div class="legBot">
+                            <div class="legBotData">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+            <div class="slotWeapon1"></div>
+        </div>
+        <div class=middle-section>
+
+        </div>
+        <div class="right-slots">
+            <div class="slotNone"></div>
+            <div class="slotAmulet"></div>
+            <div class="slotRing1"><div class="slotContainerLegendary">
+                <div class="tooltipLegendary">
+                    <img src="item/icons/Chest/NecroRunic.png" alt="Runic Chestplate">
+                    <div class="tooltip-content">
+                        <div class="legTop">
+                            <div class="legTopDataLeft">
+                                Runic Chestplate
+                            </div>
+                            <div class="legTopDataRight">
+                                <div class="legTopDataIconRight">
+                                    <img src="item/icons/Chest/NecroRunic.png" alt="Runic Chestplate">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="legMid">
+                            <div class="legMidData">
+
+                            </div>
+                        </div>
+
+                        <div class="legBot">
+                            <div class="legBotData">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
+            <div class="slotRing2"></div>
+            <div class="slotNone"></div>
+            <div class="slotWeapon2"></div>
+        </div>
+    </div>
+
+
+
 
 </body>
 
